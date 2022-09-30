@@ -1,6 +1,10 @@
+{% extends "../home2.html" %}
+
 {% load static %}
 
 <link rel="stylesheet" href="{%static 'css/bootstrap.min.css'%}">
+
+{% block contenido %}
 
 {% for estudiante in estudiantes %}
     <li>
@@ -12,3 +16,5 @@
 {% endfor %} 
 
 <a class="btn btn-success" href="/appCoder/create_estudiantes">Agregar Estudiante</a>
+
+{% endblock %}
